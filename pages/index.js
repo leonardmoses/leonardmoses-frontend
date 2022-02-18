@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
+import { motion } from 'framer-motion'
+
 
 export default function Home() {
   return (
@@ -14,9 +15,19 @@ export default function Home() {
 
       <main>
         
-        <h1>Home</h1>
-        
-        <Link href='/Portfolio'>Portfolio</Link>
+        <motion.h1
+          initial={{ x: -100 }}
+          animate={{ x: 0 }}
+        >Home</motion.h1>
+
+        <Link href='/Portfolio'><motion.button
+          whileHover={{ 
+            scale: 1.1,
+            textShadow: "0px 0px 8px rgb(255, 255, 255)",
+            boxShadow: "0px 0px 8px rgb(255, 255, 255)"
+          
+          }}
+        >Portfolio</motion.button></Link>
 
       </main>
 
