@@ -1,0 +1,10 @@
+@import '../styles/Main.scss' ;
+
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: $primary3;
+    border-radius: 50%;
+    display: inline-block;
+  }

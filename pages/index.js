@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../styles/Home.module.scss'
+import styles from './Index.module.scss'
 import { motion } from 'framer-motion'
 
 
@@ -19,6 +19,17 @@ export default function Home() {
           initial={{ x: -100 }}
           animate={{ x: 0 }}
         >Home</motion.h1>
+
+        <motion.span className={styles.dot}
+          whileHover={{ scale: 2 }}
+        ></motion.span>
+
+        <motion.span className={styles.dot}
+          whileHover={{ scale: 2 }}
+          ></motion.span>
+        <motion.span className={styles.dot}
+          whileHover={{ scale: 2 }}
+        ></motion.span>
 
         <Link href='/Portfolio'><motion.button
           whileHover={{ 
