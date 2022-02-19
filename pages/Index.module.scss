@@ -1,63 +1,86 @@
 @import '../styles/Main.scss' ;
 
-.dot_container {
-  // background-color: black;
-  // height: 500px;
-  // width: 100%;
-  margin: 0 auto;
-  margin-top: 20%;
-  display: flex;
-  flex-direction: column;
 
-  .dot0_container {
-    // background-color: grey;
-    margin: 0 auto;
-    #dot0 {
-      height: 300px;
-      width: 300px;
-      border-radius: 50%;
-      display: inline-block;
-      background-color: white;
-      border: 15px black solid;
-      
+
+.body {
+  height: 100vh;
+  background-image: linear-gradient(white, $altprimary1);
+  // background-repeat: no-repeat;
+
+  .main {
+    // background-color: gold;
+
+    .dot_container {
+      // background-color: black;
+      margin: 0 auto;
+      padding-top: 25%;
+      display: flex;
+      flex-direction: column;
+    
+      .dot0_container {
+        // background-color: grey;
+        margin: 0 auto;
+        #dot0 {
+          height: 300px;
+          width: 300px;
+          border-radius: 50%;
+          display: inline-block;
+          // background-color: none;
+          border: 15px black solid;
+          
+        }
+      }
+    
+      .dot {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+      }
+    
+        .dot1_container {
+          // background-color: darkblue;
+          margin: 0 auto;
+          #dot1 {
+            background-color: $primary3;
+            margin: 0 auto;
+          }
+        }
+    
+        .dot2_container {
+          // background-color: darkgreen;
+          margin: 0 auto;
+          #dot2 {
+            background-color: $secondary3;
+            margin: 0 auto;
+          }
+        }
+    
+    
+        .dot3_container {
+          // background-color: darkred;
+          margin: 0 auto;
+          #dot3 {
+            background-color: $tertiary3;
+            margin: 0 auto;
+          }
+        }
+    
     }
+
+    .name {
+      // background-color: lightcoral;
+      width: fit-content;
+      margin: 0 auto;
+      h1 {
+        font-size: 60px;
+        font-family: $script-font2;
+      }
+    }
+
   }
-
-  .dot {
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-  }
-
-    .dot1_container {
-      // background-color: darkblue;
-      margin: 0 auto;
-      #dot1 {
-        background-color: $primary3;
-        margin: 0 auto;
-      }
-    }
-
-    .dot2_container {
-      // background-color: darkgreen;
-      margin: 0 auto;
-      #dot2 {
-        background-color: $secondary3;
-        margin: 0 auto;
-      }
-    }
-
-
-    .dot3_container {
-      // background-color: darkred;
-      margin: 0 auto;
-      #dot3 {
-        background-color: $tertiary3;
-        margin: 0 auto;
-      }
-    }
 
 }
+
 
