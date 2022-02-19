@@ -15,7 +15,6 @@ export default function Home() {
 
       <body className={styles.body}>
       
-      
       <main className={styles.main}>
 
         {/* 
