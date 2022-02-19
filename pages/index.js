@@ -14,23 +14,69 @@ export default function Home() {
       </Head>
 
       <main>
-        
+
+        {/* 
         <motion.h1
           initial={{ x: -100 }}
           animate={{ x: 0 }}
         >Home</motion.h1>
+        */}
+        
+        <div className={styles.dot_container}>
 
-        <motion.span className={styles.dot}
-          whileHover={{ scale: 2 }}
-        ></motion.span>
+          <div className={styles.dot1_container}>
+            
+            <Link href="/Home">
+              <motion.span className={styles.dot} id={styles.dot1}
+              initial={{x:0 , y:-800 }}
+              animate={{x:0 , y: 0 }}
+              transition={{delay: 0.4 , type: 'spring' , stiffness: 100}}
+              ></motion.span>
+            </Link>
+          </div>
 
-        <motion.span className={styles.dot}
-          whileHover={{ scale: 2 }}
-          ></motion.span>
-        <motion.span className={styles.dot}
-          whileHover={{ scale: 2 }}
-        ></motion.span>
+          <motion.div className={styles.dot0_container}
+          initial={{x: 0 , y: 0}}
+          animate={{x: 0 , y: 0}}
+          >
+            <motion.span className={styles.dot0} id={styles.dot0}
+            initial={{x: 0 , y: 0}}
+            animate={{x: 0 , y: 0}}
+            ></motion.span>
+          </motion.div>
 
+          <motion.div className={styles.dot2_container}
+            initial={{x:-155, y:-80}}
+            animate={{x:-155, y:-80}}
+            transition={{delay:0}}
+            >
+            <Link href='/Portfolio'>
+              <motion.span className={styles.dot} id={styles.dot2}
+              initial={{x:-800 , y:800}}
+              animate={{x:0 , y:0}}
+              transition={{delay:0.4, type: 'spring' , stiffness: 100 }}
+              ></motion.span>
+            </Link>
+          </motion.div>
+
+          <motion.div className={styles.dot3_container}
+            initial={{x:155,y:-118}}
+            animate={{x:155,y:-118 /*y: -38 is default*/}}
+            transition={{delay:0}}
+          > 
+            <Link href='/Resume'>
+              <motion.span className={styles.dot} id={styles.dot3}
+              initial={{x: 800 , y:800}}
+              animate={{x:0 , y:0}}
+              transition={{delay:0.4, type: 'spring' , stiffness: 100 }}
+              ></motion.span>
+            </Link>
+          </motion.div>
+
+        </div>
+
+
+        {/*
         <Link href='/Portfolio'><motion.button
           whileHover={{ 
             scale: 1.1,
@@ -39,9 +85,14 @@ export default function Home() {
           
           }}
         >Portfolio</motion.button></Link>
-
+        */}
+        
       </main>
 
     </div>
   )
 }
+
+ {/* */}
+  {/* */}
+   {/* */}
