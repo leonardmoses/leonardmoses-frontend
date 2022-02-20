@@ -7,13 +7,58 @@
   background-image: linear-gradient(white, $altprimary1);
   // background-repeat: no-repeat;
 
+  .header {
+    margin: 20px auto 0 auto;
+    // background-color: aquamarine;
+    width: fit-content;
+
+    .directions {
+      display: inline-block;
+      background-color: blue;
+      h2 {
+        text-align: left;
+        background-color: red;
+
+        overflow: hidden;
+        border-right: .15em solid orange; /* cursor*/
+        font-size: 24px;
+        width: 0;
+      }
+    }
+  }
+
   .main {
     // background-color: gold;
+
+    .title_container {
+      // background-color: gold;
+      margin: 0 auto;
+      padding: 20px 0 50px 0 ;
+      height: 50px;
+      // margin-top: 100px;
+      width: fit-content;
+
+      h1{
+        font-size: 50px;
+        // font-family: $title-font2;
+        text-align: center;
+        // background-color: green;
+        animation-duration: 2s;
+        animation-name: fadein;
+      }
+
+      @keyframes fadein {
+        0%    { opacity: 0; }
+        50%   { opacity: 0; }
+        100%  { opacity: 100; }
+      }
+
+    }
 
     .dot_container {
       // background-color: black;
       margin: 0 auto;
-      padding-top: 25%;
+      padding-top: 0%;
       display: flex;
       flex-direction: column;
     
@@ -69,18 +114,35 @@
     
     }
 
-    .name {
+    .name_container {
       // background-color: lightcoral;
-      width: fit-content;
+      width:fit-content;
       margin: 0 auto;
-      h1 {
-        font-size: 60px;
-        font-family: $script-font2;
+
+      .name_text {
+
+        
+        
+        h1 {
+          font-size: 60px;
+          font-family: $script-font2;
+          // background-color: blue;
+          // animation-delay: 3s;
+          // animation-duration: 4s;
+          // animation-name: fadein;
+
+        }
+
+        .fadeEffect {
+
+        }
+
+
       }
+
     }
 
   }
 
 }
-
 
