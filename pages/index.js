@@ -7,7 +7,15 @@ import { useState } from 'react'
 
 export default function Home() {
 
-  const [ button1 , setButton1] = useState('') ;
+  const [ button1 , setButton1 ] = useState("") ;
+  const [ color , setColor ] = useState("") ;
+
+  const buttonvariants = {
+    hover: {
+      scale: 1.2,
+      transition: { delay: 0 , duration: 0.2},
+    },
+  }
 
   return (
     <div className={styles.container}>
@@ -33,9 +41,12 @@ export default function Home() {
         <div className={styles.title_container}>
               
           <motion.h1
-            initial={{ x: -100 , opacity: 0 }}
-            animate={{ x: 0 , opacity: 1 }}
-            transition={{ duration: 3 }}
+          // initial={{opacity:0}}
+          // whileHover={{
+          //   opacity:1,
+          //   delay: 3
+          // }}
+          style={{background:color}}
           >{button1}</motion.h1> 
         </div>
        
@@ -49,11 +60,23 @@ export default function Home() {
               <motion.span className={styles.dot} id={styles.dot1}
               initial={{x:0 , y:-800 }}
               animate={{x:0 , y: 0 }}
-              transition={{ delay: 1.4 , type: 'spring' , stiffness: 100}}
-              whileHover={{ scale: 1.5 }}
+              transition={{
+                delay: 1 , 
+                type: 'spring' , 
+                stiffness: 100 , 
+                // mass: 0.7 , 
+                // damping: 20
+              
+              }}
+              variants={buttonvariants}
+              whileHover='hover'
+              drag="x"
+              dragConstraints={{ left:-10 , right: 10 , down: -10 , up: 10 }}
+              dragSnapToOrigin="true"
               type="button"
-              onHoverStart={ () => setButton1("About Me")}
+              onHoverStart={ () => {setButton1("About Me") ; setColor("white")}}
               onHoverEnd={ () => setButton1("")}
+
               ></motion.span>
             </Link>
           </div>
@@ -61,7 +84,7 @@ export default function Home() {
           <motion.div className={styles.dot0_container}
           initial={{x: 0 , y: 0 , opacity: 0 }}
           animate={{x: 0 , y: 0 , opacity: 1 }}
-          transition={{ duration: 1.5 , delay: 1 , ease: 'easeOut' }}
+          transition={{ duration: 1.5 , delay: 0.5 , ease: 'easeOut' }}
           >
             <motion.span className={styles.dot0} id={styles.dot0}
             initial={{x: 0 , y: 0 , }}
@@ -79,7 +102,15 @@ export default function Home() {
               <motion.span className={styles.dot} id={styles.dot2}
               initial={{x:-800 , y:800}}
               animate={{x:0 , y:0}}
-              transition={{delay:1.4, type: 'spring' , stiffness: 100 }}
+              transition={{
+                delay: 1 , 
+                type: 'spring' , 
+                stiffness: 100 , 
+                // mass: 0.7 , 
+                // damping: 20
+              }}
+              variants={buttonvariants}
+              whileHover="hover"
               type="button"
               onHoverStart={ () => setButton1("Portfolio")}
               onHoverEnd={ () => setButton1("")}
@@ -96,7 +127,15 @@ export default function Home() {
               <motion.span className={styles.dot} id={styles.dot3}
               initial={{x: 800 , y:800}}
               animate={{x:0 , y:0}}
-              transition={{delay:1.4, type: 'spring' , stiffness: 100 }}
+              transition={{
+                delay: 1 , 
+                type: 'spring' , 
+                stiffness: 100 , 
+                // mass: 0.7 , 
+                // damping: 20
+              }}
+              variants={buttonvariants}
+              whileHover="hover"
               type="button"
               onHoverStart={ () => setButton1("Resume")}
               onHoverEnd={ () => setButton1("")}
