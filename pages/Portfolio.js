@@ -17,7 +17,7 @@ function Portfolio() {
                         
                         }}
 
-                        >Home
+                        >Splash
                     </motion.button>
                 </Link>
             
