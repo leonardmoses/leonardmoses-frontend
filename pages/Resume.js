@@ -16,7 +16,7 @@ function Resume() {
                 
                 }}
 
-                >Home
+                >Splash
             </motion.button>
         </Link>
         </div>

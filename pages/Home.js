@@ -1,10 +1,12 @@
 import Link from "next/link"
 import { motion } from 'framer-motion'
+import Layout from "../components/Layout";
 
 
 function Home() {
     return ( 
-        <div>
+        
+        <Layout>
             <h1>Home</h1>
 
             <Link href='/'>
@@ -16,10 +18,10 @@ function Home() {
                 
                 }}
 
-                >Home
+                >Splash
             </motion.button>
         </Link>
-        </div>
+        </Layout>
      );
 }
 

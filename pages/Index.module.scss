@@ -1,8 +1,8 @@
 @import '../styles/Main.scss' ;
 
 
-
 .body {
+  --background: linear-gradient(white, $altprimary1);
   height: 100vh;
   background-image: linear-gradient(white, $altprimary1);
   // background-repeat: no-repeat;
@@ -12,18 +12,35 @@
     // background-color: aquamarine;
     width: fit-content;
 
-    .directions {
-      display: inline-block;
-      background-color: blue;
+    .directions { /* technique from https://www.youtube.com/watch?v=w1nhwUGsG6M */
       h2 {
-        text-align: left;
-        background-color: red;
+        font-family: $title-font2;
+        font-size: 20px;
+        position: relative;
 
-        overflow: hidden;
-        border-right: .15em solid orange; /* cursor*/
-        font-size: 24px;
-        width: 0;
       }
+      h2::before , h2::after {
+        content: '';
+        position: absolute;
+        // background-color: red;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      h2::before {
+        background-color: white;
+        animation: typewriter 2s ease forwards;
+        animation-delay: 3s;
+      }
+
+      @keyframes typewriter {
+        to {
+          left: 100%;
+        }
+      }
+
     }
   }
 
