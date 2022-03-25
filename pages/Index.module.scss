@@ -5,6 +5,7 @@
   --background: linear-gradient(white, $altprimary1);
   height: 100vh;
   background-image: linear-gradient(white, $altprimary1);
+  background-attachment: fixed;
   // background-repeat: no-repeat;
 
   .header {
