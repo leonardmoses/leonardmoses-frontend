@@ -6,9 +6,19 @@
         // background-color: green;
         margin: 10px auto 0 auto;
         width: 70%;
+        h1 {
+            @include Title;
+            font-size: 10;
+        }
         h2 {
-            font-size: 40px;
+            font-size: 30px;
+            // text-align: center;
             margin: 10px 0 10px 0;
+            color: $primary3;
+        }
+        h3 {
+            font-size: 23px;
+            margin-bottom: 10px;
         }
         p {
             font-size: 14px;

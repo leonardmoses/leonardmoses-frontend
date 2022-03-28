@@ -18,9 +18,9 @@ const Header = () => {
                 
                 <div className={styles.links}>
                     <ul>
-                        <li><Link href='/Home'>Home</Link></li>
-                        <li><Link href='/Portfolio'>Portfolio</Link></li>
-                        <li><Link href='Resume'>Resume</Link></li>
+                        <li className={styles.linkHome}><Link href='/Home'>Home</Link></li>
+                        <li className={styles.linkPortfolio}><Link href='/Portfolio'>Portfolio</Link></li>
+                        <li className={styles.linkResume}><Link href='Resume'>Resume</Link></li>
                     </ul>
                 </div>
                 <hr/>

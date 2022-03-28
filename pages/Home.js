@@ -12,7 +12,8 @@ function Home() {
 
                 <div className={styles.content}>
                     <div className={styles.brandStatement}>
-                        <h2>Aspiration</h2>
+                        <h1>Leonard Moses</h1>
+                        <h2>My Brand Statement</h2>
                         <p>Passionate Software Engineer and determined learner with a belief that anything can be achieved, no matter how complex. We come into this world with zero information and we learn everything despite starting with a blank slate. This is the essence of what we do – solve problems even without prior knowledge. Driven by curiosity and a love of creating solutions, eager to contribute to a collaborative development team.</p>
                     </div>
 
