@@ -36,12 +36,15 @@ function Portfolio() {
                 <div className={styles.projectEach}>
                     <h2>{project.name}</h2>
                     <img src={project.image}/>
-                    <a className="gitButton" href={project.git} target="#">
-                        <button>GitHub</button>
-                    </a>
-                    <a className="liveButton" href={project.live} target="#2">
-                        <button>Live Site</button>
-                    </a>
+                    <div className={styles.buttons}>
+                        <a className={styles.gitButton} href={project.git} target="#">
+                            <button>GitHub</button>
+                        </a>
+                        <a className={styles.liveButton} href={project.live} target="#2">
+                            <button>Live Site</button>
+                        </a>
+                    </div>
+
                 </div>
             ));
     }

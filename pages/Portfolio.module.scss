@@ -11,6 +11,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 50px, 0;
+        
 
 
         h1 {
@@ -47,11 +48,10 @@
             margin-bottom: 30px;
             justify-content: space-around;
             background-color: rgba($secondary5, 0.5);
-            // border: 1px black solid;
+            border: 1px solid rgba($secondary5, 0.1);
             contain: content;
             border-radius: 8px;
-            box-shadow: 6px 6px 20px -10px $secondary4;
-            
+            box-shadow: 6px 6px 20px -10px $secondary2;
             
 
             img {
@@ -59,9 +59,22 @@
                 border: 1px (rgba($secondary5, 0.2)) solid;
                 opacity: 1;
                 box-shadow: 0px 5px 15px -7px rgba($secondary5, 0.5);
-                padding: 5px;
-                // margin-bottom: 5px;
-                
+                margin: 5px;
+                // position: relative;
+                // bottom: 5px;
+                margin-bottom: 30px;
+            }
+
+            .buttons {
+                // background-color: blue;
+                position: absolute;
+                width: 100%;
+                display: flex;
+                // flex-wrap: wrap;
+                justify-content: space-around;
+                margin-bottom: 5px;
+                bottom: 0px;
+
             }
         }
         
