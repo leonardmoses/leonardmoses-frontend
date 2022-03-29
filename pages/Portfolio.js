@@ -1,11 +1,12 @@
 import Link from "next/link"
 import { motion } from 'framer-motion'
 import Layout from "../components/Layout";
+import styles from "./Portfolio.module.scss"
 import { useState, useEffect } from "react";
-import react from "react";
 
 function Portfolio() {
 
+//#region API call 
   // URL should have YOUR HEROKU URL for your backend, make sure you include the trailing slash
   const URL = "https://gaportfolio-backend.herokuapp.com/";
   // const URL = "http://localhost:4000/";
@@ -25,30 +26,36 @@ function Portfolio() {
 
     // make an intial call for the data inside a useEffect, so it only happens once a component loads.
     useEffect(() => getProjectsData(), []);
+//#endregion API call
 
+
+//#region loaded
     // define a function that will return the JSX needed once we get the data
     const loaded = () => {
-        return projects.map((project) => ( 
-            <Layout>
-                <main>
-                    <div className="eachProject">
-                        <h1>{project.name}</h1>
-                        <img src={project.image}/>
-                        <a className="gitButton" href={project.git} target="#">
-                            <button>GitHub</button>
-                        </a>
-                        <a className="liveButton" href={project.live} target="#2">
-                            <button>Live Site</button>
-                        </a>
-                    </div>
-                
-                </main>
-            </Layout>
-         ));
-
+            return projects.map((project) => ( 
+                <div className={styles.projectEach}>
+                    <h2>{project.name}</h2>
+                    <img src={project.image}/>
+                    <a className="gitButton" href={project.git} target="#">
+                        <button>GitHub</button>
+                    </a>
+                    <a className="liveButton" href={project.live} target="#2">
+                        <button>Live Site</button>
+                    </a>
+                </div>
+            ));
     }
+//#endregion loaded
 
-    return projects ? loaded() : <h1>loading...</h1>
+    return (
+        <Layout>
+            <main className={styles.main}>
+                <div className={styles.projectsAll}>
+                    {projects ? loaded() : <h1>loading...</h1>}
+                </div>
+            </main>
+        </Layout>
+    );
 }
 
 export default Portfolio;
