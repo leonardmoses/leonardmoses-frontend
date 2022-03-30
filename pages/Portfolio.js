@@ -34,7 +34,7 @@ function Portfolio() {
     const loaded = () => {
             return projects.map((project) => ( 
                 <div className={styles.projectEach}>
-                    <h2>{project.name}</h2>
+                    <h3>{project.name}</h3>
                     <img src={project.image}/>
                     <div className={styles.buttons}>
                         <a className={styles.gitButton} href={project.git} target="#">
@@ -53,9 +53,20 @@ function Portfolio() {
     return (
         <Layout>
             <main className={styles.main}>
-                <div className={styles.projectsAll}>
-                    {projects ? loaded() : <h1>loading...</h1>}
+
+                <div className={styles.Content}>
+
+                    <div className={styles.SubHeader}>
+                        <h1>Projects</h1>
+                        <h2>All Projects Listed Independly Completed</h2>
+                    </div>
+
+                    <div className={styles.projectsAll}>
+                        {projects ? loaded() : <h2>loading...</h2>}
+                    </div>
+
                 </div>
+
             </main>
         </Layout>
     );

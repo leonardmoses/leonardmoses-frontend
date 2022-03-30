@@ -3,7 +3,7 @@ import styles from "./Footer.module.scss"
 const Footer = () => {
     return ( 
 
-        <div className={styles.main}>
+        <div className={styles.FooterMain}>
             <hr/>
             <div className={styles.Links}>
                 <ul>

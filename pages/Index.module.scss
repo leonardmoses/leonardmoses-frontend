@@ -8,19 +8,27 @@
   background-attachment: fixed;
   // background-repeat: no-repeat;
 
+/* To prevent no show for framer-motion on hover for dots (inherited from Type.scss)*/
+  h1 {
+    -webkit-text-fill-color: unset; 
+    -moz-text-fill-color: unset;
+    font-size: 45px;
+  }
+
+
   .header {
     margin: 20px auto 0 auto;
     // background-color: aquamarine;
     width: fit-content;
 
     .directions { /* technique from https://www.youtube.com/watch?v=w1nhwUGsG6M */
-      h2 {
+      h3 {
         font-family: $title-font2;
         font-size: 20px;
         position: relative;
 
       }
-      h2::before , h2::after {
+      h3::before , h3::after {
         content: '';
         position: absolute;
         // background-color: red;
@@ -30,7 +38,7 @@
         left: 0;
       }
 
-      h2::before {
+      h3::before {
         background-color: white;
         animation: typewriter 2s ease forwards;
         animation-delay: 3s;
@@ -73,12 +81,18 @@
 
     }
 
+    h2 {
+      @include Titleh1;
+      font-size: 50px;
+    }
+
     .dot_container {
       // background-color: black;
       margin: 0 auto;
       padding-top: 0%;
       display: flex;
       flex-direction: column;
+      
     
       .dot0_container {
         // background-color: grey;
@@ -114,9 +128,11 @@
         .dot2_container {
           // background-color: darkgreen;
           margin: 0 auto;
+          
           #dot2 {
             background-color: $secondary3;
             margin: 0 auto;
+
           }
         }
     
@@ -136,6 +152,8 @@
       // background-color: lightcoral;
       width:fit-content;
       margin: 0 auto;
+
+      @include Titleh1;
 
       .name_text {
 

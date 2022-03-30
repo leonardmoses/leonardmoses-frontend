@@ -8,20 +8,23 @@ function Resume() {
     return ( 
         <Layout>
             <main className={styles.main}>
-                <div className={styles.content}>
-                    <div className={styles.subheader}>
+
+                <div className={styles.Content}>
+
+                    <div className={styles.SubHeader}>
                         <h1>Resume</h1>
                         <div className={styles.downloadDiv}>
                             <h2>Updated April 2022</h2>
-                            <a href="../static/images/Moses_Resume.pdf" download className={styles.downloadButton}>Download Resume</a>
+                            <a href="../static/images/Moses_Resume.pdf" download className={styles.ResumeButton}>Download Resume</a>
                         </div>
-
                     </div>
+
                     <div className={styles.resume}>
                         <img src="../static/images/Moses_Resume.png"/>
                     </div>
-                    
+
                 </div>
+
             </main>
         </Layout>
      );
