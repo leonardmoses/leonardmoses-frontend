@@ -1,4 +1,5 @@
 
+
 /*#region Variables*/
 
 /*#region Old Colors*/
@@ -51,5 +52,62 @@ $altprimary2: #6d85e6;
 $altprimary3: #0c33d6;
 $altprimary4: #071f80;
 $altprimary5: #020a2b;
+
+
+@mixin Titleh1 {
+    background-color: $primary3;
+    background-image: linear-gradient(0deg, $altprimary3, $tertiary3);
+    background-clip: text;
+    /* background-size: 100%; */
+    /* background-repeat: repeat; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+@mixin NavLinks {
+    background-color: $primary3;
+    background-image: linear-gradient(0deg, $altprimary3, $tertiary3);
+    background-clip: text;
+    /* background-size: 100%; */
+    /* background-repeat: repeat; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+@mixin Button {
+    // background-color: green;
+    // display: flex;
+   
+    background-color: $tertiary4;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    // display: inline-block;
+    font-size: 18px;
+    border-radius: 7px;
+
+    // margin-left: auto;
+    transition-duration: 0.2s;
+    
+    &:hover {
+        background-color: $tertiary2;
+        color: $tertiary4;
+    }
+    &:active {
+        transform: scale(0.97);
+        color: $tertiary1;
+    }
+    
+}
+
+
 
 /*#endregion Variables*/

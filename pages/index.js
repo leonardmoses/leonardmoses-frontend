@@ -30,7 +30,7 @@ export default function Home() {
       <header className={styles.header}>
       
         <div className={styles.directions}>
-          <h2>Click a Colored Dot</h2>
+          <h3>Click a Colored Dot</h3>
         </div>
         
       
@@ -56,7 +56,7 @@ export default function Home() {
 
           <div className={styles.dot1_container}>
             
-            <Link href="/Home">
+            <Link href="/About">
               <motion.span className={styles.dot} id={styles.dot1}
               initial={{x:0 , y:-800 }}
               animate={{x:0 , y: 0 }}
@@ -74,7 +74,7 @@ export default function Home() {
               dragConstraints={{ left:-10 , right: 10 , down: -10 , up: 10 }}
               dragSnapToOrigin="true"
               type="button"
-              onHoverStart={ () => {setButton1("About Me") ; setColor("white")}}
+              onHoverStart={ () => {setButton1(<h2>About Me</h2>) ; setColor("white")}}
               onHoverEnd={ () => setButton1("")}
 
               ></motion.span>
@@ -112,7 +112,7 @@ export default function Home() {
               variants={buttonvariants}
               whileHover="hover"
               type="button"
-              onHoverStart={ () => setButton1("Portfolio")}
+              onHoverStart={ () => setButton1(<h2>Portfolio</h2>)}
               onHoverEnd={ () => setButton1("")}
               ></motion.span>
             </Link>
@@ -137,7 +137,7 @@ export default function Home() {
               variants={buttonvariants}
               whileHover="hover"
               type="button"
-              onHoverStart={ () => setButton1("Resume")}
+              onHoverStart={ () => setButton1(<h2>Resume</h2>)}
               onHoverEnd={ () => setButton1("")}
 
               ></motion.span>

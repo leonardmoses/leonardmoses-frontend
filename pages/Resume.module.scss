@@ -1,0 +1,38 @@
+@import '../styles/Main.scss';
+
+.main {
+
+    h2 {
+        color: $tertiary3;
+    }
+
+    .Content {
+        // display: flex;
+        // flex-wrap: wrap;
+        // float: right;
+        // background-color: blue;
+        // width: 70%;
+        // contain: content;
+
+        .downloadDiv {
+            // background-color: green;
+            display: flex;
+            justify-content: space-between;
+
+            .ResumeButton {
+                @include Button;
+            }
+        }
+
+        .resume {
+            // background-color: blue;
+            img {
+                width: 100%;
+                border: 1px rgba(145, 13, 101, 0.281) solid;
+                opacity: 1;
+                box-shadow: 0px 5px 15px -7px $tertiary4;
+            }
+        }
+    }
+
+}
