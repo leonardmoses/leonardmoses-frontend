@@ -37,12 +37,8 @@ function Portfolio() {
                     <h3>{project.name}</h3>
                     <img src={project.image}/>
                     <div className={styles.buttons}>
-                        <a className={styles.gitButton} href={project.git} target="#">
-                            <button>GitHub</button>
-                        </a>
-                        <a className={styles.liveButton} href={project.live} target="#2">
-                            <button>Live Site</button>
-                        </a>
+                        <a className={styles.gitButton} href={project.git} target="#">GitHub</a>
+                        <a className={styles.liveButton} href={project.live} target="#2">Live Site</a>
                     </div>
 
                 </div>

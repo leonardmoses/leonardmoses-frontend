@@ -3,11 +3,12 @@
 .main {
 
     h2 {
-        color: $secondary4;
+        color: rgba($secondary4 , 1);
     }
 
     h3 {
-        color: $secondary2;
+        color: rgba($secondary4 , 0.8);
+        // text-shadow: 1px 1px 5px $secondary4;
     }
 
     .SubHeader {
@@ -29,6 +30,8 @@
             
             
             .projectEach {
+
+                background-color: rgba($secondary5, 0.04);
                 display: flex;
                 flex-wrap: wrap;
                 position: relative;
@@ -37,41 +40,74 @@
                 // margin: 0 auto;
                 margin-bottom: 30px;
                 justify-content: space-around;
-                background-color: rgba($secondary5, 0.5);
                 border: 1px solid rgba($secondary5, 0.1);
                 contain: content;
                 border-radius: 8px;
-                box-shadow: 6px 6px 20px -10px $secondary2;
+                box-shadow: 6px 6px 20px -8px $secondary2;
                 
+                h3 {
+                    // background-color: blue;
+                    margin-top: 10px;
+                }
     
                 img {
                     width: 100%;
                     border: 1px (rgba($secondary5, 0.2)) solid;
                     opacity: 1;
                     box-shadow: 0px 5px 15px -7px rgba($secondary5, 0.5);
-                    margin: 5px;
-                    // position: relative;
-                    // bottom: 5px;
-                    margin-bottom: 30px;
+                    margin-bottom: 40px;
                 }
     
                 .buttons {
-                    // background-color: blue;
+                    
+                    
+                    // background-color: $secondary3;
                     position: absolute;
                     width: 100%;
                     display: flex;
-                    // flex-wrap: wrap;
-                    justify-content: space-around;
-                    margin-bottom: 5px;
+                    justify-content: space-between;
+                    height: 35px;
                     bottom: 0px;
 
-                    // .gitButton {
-                    //     @include Button;
-                    // }
-                    // .liveButton {
-                    //     @include Button;
-                    // }
-    
+                    @keyframes pulse {
+                        0% {
+                            background-color: $secondary5;
+                            color: $secondary3;
+                        }
+                        50% {
+                            background-color: $secondary4;
+                            color: $secondary5;
+                        }
+                        100% {
+                            background-color: $secondary5;
+                            color: $secondary3;
+                          }
+                      }
+
+                    .gitButton , .liveButton {
+                        animation: pulse 8s infinite;
+                        width: 50%;
+                        @include Button;
+                        padding: 10px 20px;
+                        border-radius: 0px;
+                        font-size: 14px;
+                        background-color: rgba($secondary4 , 1);
+                        border: 1px solid rgba($secondary5 , 0.2);
+                        
+
+                        &:hover {
+                            animation: unset;
+                            background-color: $secondary3;
+                            color: $secondary4;
+
+                        }
+                        &:active {
+                            transform: scale(0.95);
+                            background-color: $secondary1;
+                            color: $secondary5;
+                        }
+                    }
+
                 }
             }
             
