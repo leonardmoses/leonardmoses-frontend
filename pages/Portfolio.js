@@ -54,7 +54,7 @@ function Portfolio() {
 
                     <div className={styles.SubHeader}>
                         <h1>Projects</h1>
-                        <h2>All Projects Listed Independly Completed</h2>
+                        <h2>All projects listed were completed Independently</h2>
                     </div>
 
                     <div className={styles.projectsAll}>
