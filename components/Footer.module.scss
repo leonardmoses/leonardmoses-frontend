@@ -1,0 +1,27 @@
+@import "../styles/Main.scss" ;
+
+
+.FooterMain {
+    // background-color: coral;
+    margin: 20px 0 0 0;
+    // padding: 0 0 20px 0;
+
+    .Links {
+        // background-color: lightblue;
+        padding: 0 0 20px 0;
+        width: max-content;
+        margin: 0 auto;
+
+        ul {
+            // background-color: lightgreen;
+            width: max-content;
+
+            li {
+                // background-color: lightskyblue;
+                width: max-content;
+                display: inline;
+                padding: 0 20px;
+            }
+        }
+    }
+}

@@ -1,25 +1,32 @@
 import Link from "next/link"
 import { motion } from 'framer-motion'
+import Layout from "../components/Layout";
+import styles from "./Resume.module.scss";
 
 
 function Resume() {
     return ( 
-        <div>
-            <h1>Resume</h1>
+        <Layout>
+            <main className={styles.main}>
 
-            <Link href='/'>
-            <motion.button
-                whileHover={{ 
-                scale: 1.1,
-                textShadow: "0px 0px 8px rgb(255, 255, 255)",
-                boxShadow: "0px 0px 8px rgb(255, 255, 255)"
-                
-                }}
+                <div className={styles.Content}>
 
-                >Home
-            </motion.button>
-        </Link>
-        </div>
+                    <div className={styles.SubHeader}>
+                        <h1>Resume</h1>
+                        <div className={styles.downloadDiv}>
+                            <h2>Updated April 2022</h2>
+                            <a href="../static/images/Moses_Resume.pdf" download className={styles.ResumeButton}>Download Resume</a>
+                        </div>
+                    </div>
+
+                    <div className={styles.resume}>
+                        <img src="../static/images/Moses_Resume.png"/>
+                    </div>
+
+                </div>
+
+            </main>
+        </Layout>
      );
 }
 
