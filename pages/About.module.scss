@@ -8,8 +8,29 @@
         // margin: 10px auto 0 auto;
         width: 70%;
 
+        .SubHeader {
+            .HeadshotDiv {
+                // background-color: blue;
+                width: 100%;
+                margin: 0 auto 80px auto;
+                text-align: center;
+
+                img {
+                    width: 50%;
+                    border: 1px rgba($primary3, 0.7) solid;
+                    border-radius: 10px;
+                    opacity: 1;
+                    box-shadow: 0px 5px 15px -7px $primary4;
+                }
+            }
+        }
+
         .AllParagraphs{
             // background-color: salmon;
+            p {
+                // background-color: seagreen;
+                margin-bottom: 15px;
+            }
         }
         
     }
