@@ -2,31 +2,50 @@
 
 @import './Type.scss' ;
 
-@import './Partials.scss';
-
-// @import '../components/Header.module.scss';
-
+@import './Media.scss';
 
 .HeaderMain , .FooterMain {
     // background-color: blue;
-
     hr {
         margin-top: 48px;
         opacity: 0.6;
-        width: 70%;
         height: 1px;
         background-color: $altprimary2;
     }
 
     li {
+        :link , :visited {
+            color: $altprimary4;
+        }
+
         :hover {
-            color: $altprimary2;
+            color: $tertiary4;
         }
     }
-
 }
 
 .main {
+
+    @include Infinite {
+        h1 {font-size: 40px;}
+    }
+
+    @include Res900 {
+        h1 {font-size: 35px;}
+        h2 {font-size: 25px;}
+        h3 {font-size: 20px;}
+    }
+
+    @include Res700 {
+        h2 {font-size: 20px;}
+        h3 {font-size: 18px;}
+    }
+
+    @include Res500 {
+        h1 {font-size: 30px;}
+        h2 {font-size: 18px;}
+        h3 {font-size: 14px;}
+    }
 
     .Content {
         // background-color: green;
@@ -39,5 +58,4 @@
             margin-bottom: 25px;
         }
     }
-
 }

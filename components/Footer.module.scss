@@ -3,8 +3,9 @@
 
 .FooterMain {
     // background-color: coral;
-    margin: 20px 0 0 0;
-    // padding: 0 0 20px 0;
+    width: 70%;
+    margin: 20px auto 0 auto;
+    padding: 0 0 20px 0;
 
     .Links {
         // background-color: lightblue;
@@ -21,6 +22,10 @@
                 width: max-content;
                 display: inline;
                 padding: 0 20px;
+
+                // :link , :visited{
+                //     color: $primary4;
+                // }
             }
         }
     }
