@@ -7,20 +7,28 @@
     }
 
     .Content {
-        // display: flex;
-        // flex-wrap: wrap;
-        // float: right;
         // background-color: blue;
-        // width: 70%;
-        // contain: content;
+        width: 70%;
+        
+        @include Res500 {h1 {margin-bottom: 0;}}
 
         .downloadDiv {
             // background-color: green;
             display: flex;
             justify-content: space-between;
 
+            @include Res500 {
+                h2 {font-size: 22px;}
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
             .ResumeButton {
-                @include Button;
+                @include Button($FontSize:18px);
+                @include Res900{font-size: 16px};
+                @include Res700{font-size: 13px};
+                @include Res500{font-size: 14px};
             }
         }
 
@@ -34,5 +42,4 @@
             }
         }
     }
-
 }

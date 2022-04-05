@@ -53,7 +53,6 @@ $altprimary3: #0c33d6;
 $altprimary4: #071f80;
 $altprimary5: #020a2b;
 
-
 @mixin Titleh1 {
     background-color: $primary3;
     background-image: linear-gradient(0deg, $altprimary3, $tertiary3);
@@ -65,7 +64,7 @@ $altprimary5: #020a2b;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     text-align: center;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
 }
 
 @mixin NavLinks {
@@ -80,21 +79,17 @@ $altprimary5: #020a2b;
     -moz-text-fill-color: transparent;
 }
 
-@mixin Button {
-    // background-color: green;
-    // display: flex;
-   
+@mixin Button($FontSize) {
+
     background-color: $tertiary4;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    // display: inline-block;
-    font-size: 18px;
+    font-size: $FontSize;
     border-radius: 7px;
 
-    // margin-left: auto;
     transition-duration: 0.2s;
     
     &:hover {
@@ -105,9 +100,6 @@ $altprimary5: #020a2b;
         transform: scale(0.97);
         color: $tertiary1;
     }
-    
 }
-
-
 
 /*#endregion Variables*/

@@ -4,15 +4,13 @@
 
     h2 {
         color: rgba($secondary4 , 1);
+        text-align: center;
     }
 
     h3 {
         color: rgba($secondary4 , 0.8);
-        // text-shadow: 1px 1px 5px $secondary4;
-    }
-
-    .SubHeader {
-        // background-color: blue;
+        margin-top: 10px;
+        text-align: center;
     }
 
     .Content {
@@ -20,35 +18,33 @@
 
         .projectsAll {
             // background-color: rgba($secondary5, 0.3);
-            // margin: 20px auto 0 auto;
-            
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            padding: 0 0 0 0;
-            
-            
+
+            @include Res900 {
+                flex-direction: column;
+            }
             
             .projectEach {
-
                 background-color: rgba($secondary5, 0.04);
                 display: flex;
                 flex-wrap: wrap;
                 position: relative;
                 width: 50%;
                 max-width: 300px;
-                // margin: 0 auto;
+                margin: 0 auto;
                 margin-bottom: 30px;
                 justify-content: space-around;
                 border: 1px solid rgba($secondary5, 0.1);
                 contain: content;
                 border-radius: 8px;
                 box-shadow: 6px 6px 20px -8px $secondary2;
-                
-                h3 {
-                    // background-color: blue;
-                    margin-top: 10px;
-                }
+
+                @include Infinite {margin: 0px auto 40px auto;}
+                @include Res900 {margin: 0 auto 30px auto;}
+                @include Res700 {margin: 0 auto 20px auto;}
+                @include Res500 {margin: 0 auto 10px auto;}
     
                 img {
                     width: 100%;
@@ -59,8 +55,6 @@
                 }
     
                 .buttons {
-                    
-                    
                     // background-color: $secondary3;
                     position: absolute;
                     width: 100%;
@@ -87,13 +81,27 @@
                     .gitButton , .liveButton {
                         animation: pulse 8s infinite;
                         width: 50%;
-                        @include Button;
+                        @include Button(14px);
                         padding: 10px 20px;
                         border-radius: 0px;
                         font-size: 14px;
                         background-color: rgba($secondary4 , 1);
                         border: 1px solid rgba($secondary5 , 0.2);
-                        
+
+                        @include Res700 {
+                            font-size: 14px;
+                            padding: 10px 15px;
+                        };
+
+                        @include Res500 {
+                            font-size: 14px;
+                            padding: 10px 0px;
+                        };
+
+                        @include iphone12Pro {
+                            font-size: 12px;
+                            padding: 10px 0px;
+                        };
 
                         &:hover {
                             animation: unset;
@@ -107,13 +115,8 @@
                             color: $secondary5;
                         }
                     }
-
                 }
-            }
-            
+            }  
         }
-
     }
-
-
 }

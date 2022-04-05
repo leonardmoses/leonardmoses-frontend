@@ -1,0 +1,23 @@
+@mixin Infinite {
+    @media only screen and (min-width: 1295px ) { @content; }
+}
+
+@mixin Res900 {
+    @media only screen and (max-width: 900px ) { @content; }
+}
+
+@mixin Res700 {
+    @media only screen and (max-width: 700px ) { @content; }
+}
+
+@mixin Res500 {
+    @media only screen and (max-width: 500px ) { @content; }
+}
+
+@mixin iphone12Pro {
+    @media only screen and (max-width: 390px ) { @content; }
+}
+
+@mixin iphone5SE {
+    @media only screen and (max-width: 320px ) { @content; }
+}
