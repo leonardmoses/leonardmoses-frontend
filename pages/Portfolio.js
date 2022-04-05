@@ -5,7 +5,7 @@ import styles from "./Portfolio.module.scss"
 import { useState, useEffect } from "react";
 import Image from 'next/image';
 
-function Portfolio() {
+function Portfolio(props) {
 
 //#region API call 
   // URL should have YOUR HEROKU URL for your backend, make sure you include the trailing slash
@@ -33,8 +33,8 @@ function Portfolio() {
 //#region loaded
     // define a function that will return the JSX needed once we get the data
     const loaded = () => {
-            return projects.map((project) => ( 
-                <div className={styles.projectEach}>
+            return projects.map((project, index) => ( 
+                <div className={styles.projectEach} key={index}>
                     <h3>{project.name}</h3>
                     <img src={project.image} alt="Image of the project"/>
                     <div className={styles.buttons}>
