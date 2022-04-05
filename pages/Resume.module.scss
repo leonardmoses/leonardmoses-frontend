@@ -9,7 +9,7 @@
     .Content {
         // background-color: blue;
         width: 70%;
-        
+
         @include Res500 {h1 {margin-bottom: 0;}}
 
         .downloadDiv {
@@ -32,14 +32,12 @@
             }
         }
 
-        .resume {
-            // background-color: blue;
-            img {
-                width: 100%;
-                border: 1px rgba(145, 13, 101, 0.281) solid;
-                opacity: 1;
-                box-shadow: 0px 5px 15px -7px $tertiary4;
-            }
+        .Resume {
+            background-color: rgba($tertiary5, 0.2);
+            padding: 2px;
+            border: 1px rgba(145, 13, 101, 0.281) solid;
+            opacity: 1;
+            box-shadow: 0px 5px 15px -7px $tertiary4;
         }
     }
 }

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import Layout from "../components/Layout";
 import styles from "./Portfolio.module.scss"
 import { useState, useEffect } from "react";
+import Image from 'next/image';
 
 function Portfolio() {
 
@@ -35,7 +36,7 @@ function Portfolio() {
             return projects.map((project) => ( 
                 <div className={styles.projectEach}>
                     <h3>{project.name}</h3>
-                    <img src={project.image}/>
+                    <img src={project.image} alt="Image of the project"/>
                     <div className={styles.buttons}>
                         <a className={styles.gitButton} href={project.git} target="#">GitHub</a>
                         <a className={styles.liveButton} href={project.live} target="#2">Live Site</a>

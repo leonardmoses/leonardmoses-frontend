@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { motion } from "framer-motion"
 import styles from "./Header.module.scss";
+import Image from 'next/image';
+import Logo from '../static/images/Logo.png'
+
 
 const Header = () => {
     return ( 
@@ -13,7 +16,7 @@ const Header = () => {
                     
                     }}
             >
-                <Link href="/"><img src="../static/images/Logo.png"/></Link>
+                <Link href="/"><Image src={Logo} alt="Image of the Logo"/></Link>
             </motion.div>
                 
                 <div className={styles.Links}>
