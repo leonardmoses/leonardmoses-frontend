@@ -2,6 +2,8 @@ import Link from "next/link"
 import { motion } from 'framer-motion'
 import Layout from "../components/Layout";
 import styles from "./Resume.module.scss";
+import Image from 'next/image';
+import ResumeImage from '../static/images/Moses_Resume.jpeg';
 
 
 function Resume() {
@@ -19,8 +21,8 @@ function Resume() {
                         </div>
                     </div>
 
-                    <div className={styles.resume}>
-                        <img src="../static/images/Moses_Resume.png"/>
+                    <div className={styles.Resume}>
+                        <Image src={ResumeImage} alt="Image of Resume"/>
                     </div>
 
                 </div>

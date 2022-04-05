@@ -1,7 +1,9 @@
-import Link from "next/link"
-import { motion } from 'framer-motion'
+import Link from "next/link";
+import { motion } from 'framer-motion';
 import Layout from "../components/Layout";
-import styles from './About.module.scss'
+import styles from './About.module.scss';
+import Image from 'next/image';
+import Headshot from '../static/images/Headshot.jpeg'
 
 
 function About() {
@@ -15,7 +17,13 @@ function About() {
                     <div className={styles.SubHeader}>
                         <h1>Leonard Moses</h1>
                         <div className={styles.HeadshotDiv}>
-                            <img src="../static/images/Headshot.jpeg"/>
+
+                                <Image src={Headshot} alt="Headshot of Leonard Moses"/>
+                                <form action=""></form>
+                                <a href="mailto:leonardsamuelmoses@gmail.com"><h4>email: leonardsamuelmoses@gmail.com</h4></a>
+                                <a href="tel:2404928550"><h4>phone: +1(240)492-8550</h4></a>
+
+                            
                         </div>
                     </div>
 
