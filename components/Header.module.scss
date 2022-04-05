@@ -3,7 +3,8 @@
 
 .HeaderMain {
     // background-color: lightblue;
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
     height: 200px;
     position: relative;
 
@@ -28,17 +29,39 @@
         bottom: 10px;
         position: absolute;
         margin: 0 auto;
-        
 
         ul {
-            text-align: center;
+            // background-color: green;
+            width: fit-content;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+
+            @include Res700 {
+                justify-content: space-around;
+            }
+
+            @include Res500 {
+                width: 100%;
+                justify-content: space-between;
+            }
+
             li {
                 // background-color: red;
-                // justify-content:space-around;
-                display:inline;
-                margin: 0 auto;
-                width: 100%;
+                width: fit-content;
                 padding: 0 40px;
+
+                @include Res500 {padding: 0px;}
+
+                a {
+                    font-size: 16px;
+                    @include Res700 {
+                        font-size: 14px;
+                    }
+                    @include Res500 {
+                        font-size: 14px;
+                    }
+                }
             }
 
             .linkHome {
@@ -57,7 +80,5 @@
                 }
             }
         }
-
     }
-
 }

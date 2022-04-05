@@ -74,7 +74,7 @@ export default function Home() {
               dragConstraints={{ left:-10 , right: 10 , down: -10 , up: 10 }}
               dragSnapToOrigin="true"
               type="button"
-              onHoverStart={ () => {setButton1(<h2>About Me</h2>) ; setColor("white")}}
+              onHoverStart={ () => {setButton1(<h2>About Me</h2>) ; setColor()}}
               onHoverEnd={ () => setButton1("")}
 
               ></motion.span>
