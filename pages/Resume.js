@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import Layout from "../components/Layout";
 import styles from "./Resume.module.scss";
 import Image from 'next/image';
-import ResumeImage from '../static/images/Moses_Resume.jpeg';
+import ResumeImage from '../static/images/Moses_Resume.png';
 
 
 function Resume() {
