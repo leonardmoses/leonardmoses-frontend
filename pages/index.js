@@ -25,7 +25,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <body className={styles.body}>
+      <div className={styles.body}>
 
       <header className={styles.header}>
       
@@ -168,7 +168,7 @@ export default function Home() {
         */}
         
       </main>
-      </body>
+      </div>
     </div>
   )
 }

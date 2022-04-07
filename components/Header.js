@@ -6,6 +6,7 @@ import Logo from '../static/images/Logo.png'
 
 
 const Header = () => {
+
     return ( 
         <div className={styles.HeaderMain}>
             <motion.div className={styles.logoDiv}
@@ -16,14 +17,14 @@ const Header = () => {
                     
                     }}
             >
-                <Link href="/"><Image src={Logo} alt="Image of the Logo"/></Link>
+                <a href="/"><Image src={Logo} alt="Image of the Logo"/></a>
             </motion.div>
                 
                 <div className={styles.Links}>
                     <ul>
-                        <li className={styles.linkHome}><a><Link href='/About'>About</Link></a></li>
-                        <li className={styles.linkPortfolio}><a><Link href='/Portfolio'>Portfolio</Link></a></li>
-                        <li className={styles.linkResume}><a><Link href='Resume'>Resume</Link></a></li>
+                        <li className={styles.linkHome}><Link href='/About'>About</Link></li>
+                        <li className={styles.linkPortfolio}><Link href='/Portfolio'>Portfolio</Link></li>
+                        <li className={styles.linkResume}><Link href='/Resume'>Resume</Link></li>
                     </ul>
                 </div>
                 <hr/>

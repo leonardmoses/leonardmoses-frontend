@@ -19,9 +19,8 @@ function About() {
                         <div className={styles.HeadshotDiv}>
 
                                 <Image src={Headshot} alt="Headshot of Leonard Moses"/>
-                                <form action=""></form>
-                                <a href="mailto:leonardsamuelmoses@gmail.com"><h4>email: leonardsamuelmoses@gmail.com</h4></a>
-                                <a href="tel:2404928550"><h4>phone: +1(240)492-8550</h4></a>
+                                <Link href="mailto:leonardsamuelmoses@gmail.com"><h4>email: leonardsamuelmoses@gmail.com</h4></Link>
+                                <Link href="tel:2404928550"><h4>phone: +1(240)492-8550</h4></Link>
 
                             
                         </div>
