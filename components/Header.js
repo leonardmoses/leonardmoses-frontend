@@ -17,7 +17,7 @@ const Header = () => {
                     
                     }}
             >
-                <a href="/"><Image src={Logo} alt="Image of the Logo"/></a>
+                <div><a href="/"><Image src={Logo} alt="Image of the Logo"/></a></div>
             </motion.div>
                 
                 <div className={styles.Links}>
