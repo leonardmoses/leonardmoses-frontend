@@ -32,14 +32,14 @@ export default function Home() {
         <div className={styles.directions}>
           <h3>Click a Colored Dot</h3>
         </div>
-        
-      
+
+
       </header>
-      
+
       <main className={styles.main}>
 
         <div className={styles.title_container}>
-              
+
           <motion.h1
           // initial={{opacity:0}}
           // whileHover={{
@@ -49,10 +49,10 @@ export default function Home() {
           style={{background:color}}
           >{button1}</motion.h1> 
         </div>
-       
+
         <motion.div className={styles.dot_container}>
-          
-          
+
+
 
           <div className={styles.dot1_container}>
             
@@ -66,7 +66,7 @@ export default function Home() {
                 stiffness: 100 , 
                 // mass: 0.7 , 
                 // damping: 20
-              
+
               }}
               variants={buttonvariants}
               whileHover='hover'
