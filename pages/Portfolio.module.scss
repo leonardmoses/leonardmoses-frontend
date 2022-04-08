@@ -42,7 +42,7 @@
                 box-shadow: 6px 6px 20px -8px $secondary2;
 
                 @include Infinite {margin: 0px auto 40px auto;}
-                @include Res900 {margin: 0 auto 30px auto;}
+                @include Res900 {margin: 0 auto 30px auto; width: 100%;}
                 @include Res700 {margin: 0 auto 20px auto;}
                 @include Res500 {margin: 0 auto 10px auto;}
     

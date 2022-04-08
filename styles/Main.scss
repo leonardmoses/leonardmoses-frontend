@@ -51,6 +51,8 @@
         // background-color: green;
         margin: 10px auto 0px auto;
         width: 70%;
+        @include Res500 {width: 80%;}
+        @include iphone12Pro {width: 85%;}
 
         .SubHeader {
             // background-color: blue;

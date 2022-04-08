@@ -8,6 +8,10 @@
     height: 200px;
     position: relative;
 
+    @include Res500 {width: 80%;}
+    @include iphone12Pro {width: 85%;}
+
+
     .logoDiv {
         // background-color: pink;
         height: 150px;
