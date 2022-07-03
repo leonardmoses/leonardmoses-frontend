@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Layout from "../components/Layout";
 import styles from './About.module.scss';
 import Image from 'next/image';
-import Headshot from '../static/images/Headshot.jpeg'
+import Headshot from '../static/images/headshot_2.jpg'
 
 
 function About() {
