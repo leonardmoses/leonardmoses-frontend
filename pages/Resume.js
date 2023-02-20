@@ -16,7 +16,7 @@ function Resume() {
                     <div className={styles.SubHeader}>
                         <h1>Resume</h1>
                         <div className={styles.downloadDiv}>
-                            <h2>Updated April 2022</h2>
+                            <h2>Updated February 2023</h2>
                             <a href="../static/images/Moses_Resume.pdf" download className={styles.ResumeButton}>Download Resume</a>
                         </div>
                     </div>
