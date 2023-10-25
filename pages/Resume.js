@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import Layout from "../components/Layout";
 import styles from "./Resume.module.scss";
 import Image from 'next/image';
-import ResumeImage from '../static/images/Moses_Resume.png';
+import ResumeImage from '../static/images/Moses_Resume_Software.png';
 
 
 function Resume() {
@@ -17,7 +17,7 @@ function Resume() {
                         <h1>Resume</h1>
                         <div className={styles.downloadDiv}>
                             <h2>Updated February 2023</h2>
-                            <a href="../static/images/Moses_Resume.pdf" download className={styles.ResumeButton}>Download Resume</a>
+                            <a href="../static/images/Moses_Resume_Software.pdf" download className={styles.ResumeButton}>Download Resume</a>
                         </div>
                     </div>
 
